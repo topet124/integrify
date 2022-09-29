@@ -48,9 +48,11 @@ export default function UserPage() {
         <p>city: {city}</p>
         <p>suite: {suite}</p>
         <p>zipcode: {zipcode}</p>
+        <button className="button1">
         <Link className="button" to={`/`}>
           Back home
         </Link>
+        </button>
       </div>
     </section>
   );
