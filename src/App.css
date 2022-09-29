@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+
+
+.card{
+ height: auto;
+ width: 250px;
+ margin: 20px; 
+ padding: 8px 12px;
+ border-radius: 5%;
+ box-shadow: -8px 3px 5px -1px rgba(0,0,0,0.17);
+background: #f2f2f2;
+display: flex;
+flex-direction: column;
+ align-items: center; /* align items horizontally, in this case */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card2{
+ height: auto;
+ width: 250px;
+ margin: 20px; 
+ padding: 8px 12px;
+ border-radius: 5%;
+ box-shadow: -8px 3px 5px -1px rgba(0,0,0,0.17);
+background: #f2f2f2;
+}
+.card2 h3{
+text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.inside{
+ background-color: rgb(223, 200, 200) !important;
+ border-radius: 50%;
+ text-align: center;
+ height: 50%;
+ width: 50%;
+ 
+}
+.inside h1{
+text-align: center;
+line-height: 140px;
+}
+.last{
+    margin-top: 20px;
+    text-align: center;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.last button{
+  height: auto;
+  width: 100px;
   color: white;
+  background-color: cornflowerblue;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border-color: transparent;
 }
-
-.App-link {
-  color: #61dafb;
+.new{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap; ;
+}
+.new2{
+color: white;
+text-decoration: none;
 }
