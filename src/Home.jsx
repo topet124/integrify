@@ -15,18 +15,18 @@ function Home() {
       try {
         const response = await axios.get(URL);
 
-      const data = await response.data;
-      setUserData(data);
-      console.log("response:", data);
+        const data = await response.data;
+        setUserData(data);
+        console.log("response:", data);
       } catch (error) {
-        throw error
+        throw error;
       }
     };
     fetchAllUser();
   }, []);
 
-  if(!userData){
-  <p>Loading...</p>
+  if (!userData) {
+    <p>Loading...</p>;
   }
 
   return (
@@ -39,7 +39,10 @@ function Home() {
           <div className="last">
             <p>{user.name}</p>
             <p>{`@${user.username}`}</p>
-            <a href="{user.website}" className="new">{`http://${user.website}`}</a>
+            <a
+              href="{user.website}"
+              className="new"
+            >{`http://${user.website}`}</a>
             <button>
               <Link className="new2" to={`/user/${user.id}`}>
                 More details
