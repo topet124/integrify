@@ -39,10 +39,10 @@ export default function UserPage() {
   return (
     <section className="container">
       <div className="card2">
-        <p>Name: ${data.name}</p>
-        <p>Username: ${data.username}</p>
+        <p>Name: {data.name}</p>
+        <p>Username: {data.username}</p>
         <p>Phone: {data.phone}</p>
-        <p>Email: ${data.email}</p>
+        <p>Email: {data.email}</p>
         <h3>Address</h3>
         <p>street: {street}</p>
         <p>city: {city}</p>
